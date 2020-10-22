@@ -1,0 +1,31 @@
+---
+---
+
+@charset "utf-8";
+
+@import "variables";
+@import "montserrat";
+@import "bootstrap/bootstrap";
+
+.header {
+    height: 700px;
+    background: url(/assets/images/bg1.png), #221F20;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar-dark path {
+    fill: white;
+    stroke: white;
+}
+
+.about {
+    background: linear-gradient(white 40%, #EEB6B6 40%);
+}
+
+.offer {
+    height: 1000px;
+    background: url(/assets/images/bg2.png), #221F20;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
