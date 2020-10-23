@@ -6,42 +6,37 @@
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
-    <header id="tytul" class="p-5">
+    <header id="tytul" class="p-5 d-flex flex-column justify-content-between">
       <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="/">
           {% include svg/logo.svg %}
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
 
-        <div class="collapse navbar-collapse">
-          <ul class="navbar-nav ml-auto text-uppercase font-weight-bold">
-            <li class="nav-item m-5">
-              <a class="nav-link text-white" href="#o-nas">
-                O nas
-              </a>
-            </li>
-            <li class="nav-item m-5">
-              <a class="nav-link text-white" href="#oferta">
-                Oferta
-              </a>
-            </li>
-            <li class="nav-item m-5">
-              <a class="nav-link text-white" href="#referencje">
-                Referencje
-              </a>
-            </li>
-            <li class="nav-item m-5">
-              <a class="nav-link text-white" href="#kontakt">
-                Kontakt
-              </a>
-            </li>
-          </ul>
-        </div>
+        <ul class="navbar-nav ml-auto text-uppercase font-weight-bold">
+          <li class="nav-item mx-xl-5 mx-lg-3">
+            <a class="nav-link text-white" href="#o-nas">
+              O nas
+            </a>
+          </li>
+          <li class="nav-item mx-xl-5 mx-lg-3">
+            <a class="nav-link text-white" href="#oferta">
+              Oferta
+            </a>
+          </li>
+          <li class="nav-item mx-xl-5 mx-lg-3">
+            <a class="nav-link text-white" href="#referencje">
+              Referencje
+            </a>
+          </li>
+          <li class="nav-item mx-xl-5 mx-lg-3">
+            <a class="nav-link text-white" href="#kontakt">
+              Kontakt
+            </a>
+          </li>
+        </ul>
       </nav>
 
-      <div class="row">
+      <div class="row my-5 py-5">
         <div class="col offset-6">
           <h2 class="text-white h1">Kulturopracownia.</h2>
           <h2 class="text-white h1">Czytanie zmieniającego się świata</h2>
@@ -111,29 +106,32 @@
       <h3 class="h1">Oferta</h3>
       <div class="row">
         <div class="col-6">
-          <ul class="list-unstyled">
-            <li class="border-bottom">Tłumaczenia polsko-niemieckie</li>
-            <li class="border-bottom">Język niemiecki na codzień</li>
-            <li class="border-bottom">Język niemiecki w zawodzie i biznesie</li>
-            <li class="border-bottom">Praca z mikrofonem</li>
-            <li class="border-bottom">Projekt szyty na miarę</li>
-            <li class="border-bottom">Praca z piórem</li>
-            <li>Wakacje z kulturą</li>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item border-white">Tłumaczenia polsko-niemieckie</li>
+            <li class="list-group-item border-white">Język niemiecki na codzień</li>
+            <li class="list-group-item border-white">Język niemiecki w zawodzie i biznesie</li>
+            <li class="list-group-item border-white">Praca z mikrofonem</li>
+            <li class="list-group-item border-white">Projekt szyty na miarę</li>
+            <li class="list-group-item border-white">Praca z piórem</li>
+            <li class="list-group-item border-white">Wakacje z kulturą</li>
           </ul>
         </div>
         <div class="col-3 offset-1">
           <div class="bg-dark p-5">
-            <h4>Porozmawiajmy o Twoim pomyśle!</h4>
+            <h4 class="my-5">Porozmawiajmy o Twoim pomyśle!</h4>
             <a href="javascript:undefined" class="btn btn-outline-light text-uppercase">Skontaktuj się</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="referencje">
-      <h3>Referencje</h3>
-      <div class="bg-dark text-white m-5">
-        zomg
+    <section id="referencje" class="p-5">
+      <div class="d-flex mb-5">
+        <h3 class="h1">Referencje</h3>
+        <hr class="border-dark align-self-center flex-grow-1 mx-5">
+      </div>
+      <div class="bg-dark text-white p-5 text-center">
+        …
       </div>
     </section>
 
@@ -144,15 +142,15 @@
         </div>
         <div class="col">
           <h4 class="text-uppercase h6">Napisz do nas</h4>
-          <a href="mailto:info@communication-opielka.com">info@communication-opielka.com</a>
+          <a href="mailto:info@communication-opielka.com" class="text-dark font-weight-bold">info@communication-opielka.com</a>
           <div class="row my-5">
             <div class="col">
               <h5 class="h6 font-weight-bold">Jan Opielka</h5>
-              Tel. +48 660 431 670
+              <a href="tel:+48660431670" class="text-dark">Tel. +48 660 431 670</a>
             </div>
             <div class="col">
               <h5 class="h6 font-weight-bold">Katarzyna Opielka</h5>
-              Tel. +48 722 092 605
+              <a href="tel:+48722092605" class="text-dark">Tel. +48 722 092 605</a>
             </div>
           </div>
         </div>
