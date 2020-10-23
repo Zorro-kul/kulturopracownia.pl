@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
-    <header class="header p-5">
+    <header id="tytul" class="p-5">
       <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="/">
           {% include svg/logo.svg %}
@@ -23,17 +23,17 @@
               </a>
             </li>
             <li class="nav-item m-5">
-              <a class="nav-link text-white" href="javascript:undefined">
+              <a class="nav-link text-white" href="#oferta">
                 Oferta
               </a>
             </li>
             <li class="nav-item m-5">
-              <a class="nav-link text-white" href="javascript:undefined">
+              <a class="nav-link text-white" href="#referencje">
                 Referencje
               </a>
             </li>
             <li class="nav-item m-5">
-              <a class="nav-link text-white" href="javascript:undefined">
+              <a class="nav-link text-white" href="#kontakt">
                 Kontakt
               </a>
             </li>
@@ -42,19 +42,18 @@
       </nav>
 
       <div class="row">
-        <div class="col"></div>
-        <div class="col">
+        <div class="col offset-6">
           <h2 class="text-white h1">Kulturopracownia.</h2>
           <h2 class="text-white h1">Czytanie zmieniającego się świata</h2>
-          <h2 class="text-white h1">_____</h2>
+          <h2 class="text-info h1">_____</h2>
         </div>
       </div>
     </header>
 
-    <section class="about p-5">
-      <div class="row bg-dark text-white p-5">
-        <div class="col">
-          <h3 id="o-nas" class="h1">O nas</h3>
+    <section id="o-nas" class="p-5">
+      <div class="bg-dark text-white p-5 row">
+        <div class="col d-flex flex-column justify-content-center">
+          <h3 class="h1 text-center">O nas</h3>
         </div>
         <div class="col">
           <p>
@@ -70,21 +69,24 @@
           </p>
 
           <p class="my-5">
-            Zapraszamy do współpracy. <br>
-            Jan Opielka &amp; Katarzyna Opielka
+            <em>
+              Zapraszamy do współpracy. <br>
+              Jan Opielka &amp; Katarzyna Opielka
+            </em>
           </p>
 
           <a href="javascript:undefined" class="btn btn-light text-uppercase">Skontaktuj się</a>
-          <a href="javascript:undefined" class="btn btn-outline-info text-uppercase">Nasze projekty</a>
+          <a href="javascript:undefined" class="btn btn-outline-info text-uppercase ml-3">Nasze projekty</a>
         </div>
       </div>
 
       <div class="row p-5">
-        <div class="col">
-          <h3 class="h1">Kultura i edukacja</h3>
+        <div class="col d-flex flex-column justify-content-center">
+          <h3 class="h1 text-center">Kultura i edukacja</h3>
+          <h3 class="h1 text-center">Publicystyka i poezofia</h3>
         </div>
         <div class="col">
-          <img src="/assets/images/face1.png" width="100" height="100" class="img rounded-circle"></img>
+          <img src="/assets/images/face1.png" width="100" height="100" class="img rounded-circle bg-dark"></img>
           <strong>Katarzyna Opielka</strong>
           Menedżer Kultury
           <p>
@@ -105,7 +107,7 @@
       </div>
     </section>
 
-    <section class="offer p-5 text-white">
+    <section id="oferta" class="offer p-5 text-white">
       <h3 class="h1">Oferta</h3>
       <div class="row">
         <div class="col-6">
@@ -123,6 +125,35 @@
           <div class="bg-dark p-5">
             <h4>Porozmawiajmy o Twoim pomyśle!</h4>
             <a href="javascript:undefined" class="btn btn-outline-light text-uppercase">Skontaktuj się</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="referencje">
+      <h3>Referencje</h3>
+      <div class="bg-dark text-white m-5">
+        zomg
+      </div>
+    </section>
+
+    <section id="kontakt" class="p-5">
+      <div class="row">
+        <div class="col d-flex flex-column justify-content-center">
+          <h3 class="h1 text-center">Kontakt</h3>
+        </div>
+        <div class="col">
+          <h4 class="text-uppercase h6">Napisz do nas</h4>
+          <a href="mailto:info@communication-opielka.com">info@communication-opielka.com</a>
+          <div class="row my-5">
+            <div class="col">
+              <h5 class="h6 font-weight-bold">Jan Opielka</h5>
+              Tel. +48 660 431 670
+            </div>
+            <div class="col">
+              <h5 class="h6 font-weight-bold">Katarzyna Opielka</h5>
+              Tel. +48 722 092 605
+            </div>
           </div>
         </div>
       </div>

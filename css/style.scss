@@ -7,25 +7,31 @@
 @import "montserrat";
 @import "bootstrap/bootstrap";
 
-.header {
+.navbar-dark path {
+    fill: white;
+    stroke: white;
+}
+
+#tytul {
     height: 700px;
     background: url(../assets/images/bg1.png), #221F20;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.navbar-dark path {
-    fill: white;
-    stroke: white;
-}
-
-.about {
+#o-nas {
     background: linear-gradient(white 40%, #EEB6B6 40%);
 }
 
-.offer {
+#oferta {
     height: 1000px;
     background: url(../assets/images/bg2.png), #221F20;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#referencje {
+    background: url(../assets/images/bg3.png), #221F20;
     background-repeat: no-repeat;
     background-size: cover;
 }
