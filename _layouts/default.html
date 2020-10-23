@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
-    <header id="tytul" class="p-5 d-flex flex-column justify-content-between container-fluid">
+    <header id="tytul" class="p-5 container-fluid">
       <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="/">
           {% include svg/logo.svg %}
@@ -36,8 +36,8 @@
         </ul>
       </nav>
 
-      <div class="row my-5 py-5">
-        <div class="col offset-6">
+      <div class="row h-100">
+        <div class="col offset-6 align-self-center">
           <h2 class="text-white h1">Kulturopracownia.</h2>
           <h2 class="text-white h1">Czytanie zmieniającego się świata</h2>
           <h2 class="text-info h1">_____</h2>
@@ -47,7 +47,7 @@
 
     <section id="o-nas" class="container-fluid p-5">
       <div class="bg-dark text-white p-5 row">
-        <div class="col d-flex flex-column justify-content-center">
+        <div class="col align-self-center">
           <h3 class="h1 text-center">O nas</h3>
         </div>
         <div class="col">
@@ -76,14 +76,22 @@
       </div>
 
       <div class="row p-5">
-        <div class="col d-flex flex-column justify-content-center">
-          <h3 class="h1 text-center">Kultura i edukacja</h3>
-          <h3 class="h1 text-center">Publicystyka i poezofia</h3>
+        <div class="col-6 offset-6 d-flex">
+          <img src="/assets/images/face1.png" width="100" height="100" class="img rounded-circle bg-dark mr-5"></img>
+          <div class="align-self-center">
+            <h6 class="h5 font-weight-bold">Katarzyna Opielka</h6>
+            <small class="text-uppercase">Menedżer Kultury</small>
+          </div>
+        </div>
+      </div>
+      <div class="row p-5">
+        <div class="col-3 align-self-start">
+          <h3 class="h2">Kultura <br> i edukacja</h3>
+        </div>
+        <div class="col-3 align-self-end">
+          <h3 class="h2">Publicystyka <br> i poezofia</h3>
         </div>
         <div class="col">
-          <img src="/assets/images/face1.png" width="100" height="100" class="img rounded-circle bg-dark"></img>
-          <strong>Katarzyna Opielka</strong>
-          Menedżer Kultury
           <p>
             Jestem menedżerką i autorką projektów kulturalnych,
             edukatorką a z wykształcenia socjolożką oraz nauczycielką
