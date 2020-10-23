@@ -23,8 +23,15 @@
     background: linear-gradient(white 40%, #EEB6B6 40%);
 }
 
+#biuro {
+    background: url(../assets/images/bg2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1200px;
+}
+
 #oferta {
-    background: url(../assets/images/bg2.png), #221F20;
+    background: url(../assets/images/bg3.png), #221F20;
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -35,7 +42,7 @@
 }
 
 #referencje {
-    background: url(../assets/images/bg3.png), #221F20;
+    background: url(../assets/images/bg4.png), #221F20;
     background-repeat: no-repeat;
     background-size: cover;
 }
