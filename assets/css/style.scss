@@ -46,3 +46,14 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+#carousel-nav {
+    height: 400px;
+
+    hr {
+        position: absolute;
+        border-top: 1px solid black;
+        transform: rotate(-35deg);
+        margin: 100px 0;
+    }
+}
