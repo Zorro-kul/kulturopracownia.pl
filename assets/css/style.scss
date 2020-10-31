@@ -49,11 +49,11 @@
 
 #carousel-nav {
     height: 400px;
+    position: relative;
+    overflow: hidden;
 
-    hr {
-        position: absolute;
-        border-top: 1px solid black;
-        transform: rotate(-35deg);
-        margin: 100px 0;
-    }
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' preserveAspectRatio='none' viewBox='0 0 500 500'><path d='M0 499 L499 0 L500 1 L1 500' fill='black' /></svg>");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%, auto;
 }
