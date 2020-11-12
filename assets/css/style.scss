@@ -20,7 +20,7 @@
 }
 
 #o-nas {
-    background: linear-gradient(white 40%, #EEB6B6 40%);
+    background: linear-gradient(white 30%, #EEB6B6 30%);
 }
 
 #biuro {
@@ -45,6 +45,17 @@
     background: url(../images/bg4.png), #221F20;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+#carousel {
+    .carousel-item {
+        display: block;
+        visibility: hidden;
+
+        &.active {
+            visibility: visible;
+        }
+    }
 }
 
 #carousel-nav {
