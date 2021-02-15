@@ -19,40 +19,14 @@
           {% include svg/logo.svg %}
         </a>
 
-        <ul class="navbar-nav ml-auto text-uppercase font-weight-bold">
-          <li class="nav-item mx-xl-5 mx-lg-3">
-            <a class="nav-link text-white" href="#o-nas">
-              O nas
-            </a>
-          </li>
-          <li class="nav-item mx-xl-5 mx-lg-3">
-            <a class="nav-link text-white" href="#oferta">
-              Oferta
-            </a>
-          </li>
-          <li class="nav-item mx-xl-5 mx-lg-3">
-            <a class="nav-link text-white" href="#projekty">
-              Projekty
-            </a>
-          </li>
-          <li class="nav-item mx-xl-5 mx-lg-3">
-            <a class="nav-link text-white" href="#referencje">
-              Referencje
-            </a>
-          </li>
-          <li class="nav-item mx-xl-5 mx-lg-3">
-            <a class="nav-link text-white" href="#kontakt">
-              Kontakt
-            </a>
-          </li>
-        </ul>
+        {% if page.locale == "pl" %}{% include pl/menu.html %}{% endif %}
+        {% if page.locale == "de" %}{% include de/menu.html %}{% endif %}
       </nav>
 
       <div class="row h-100">
         <div class="col offset-xl-6 offset-lg-6 align-self-center">
-          <h2 class="text-white h1">Kulturopracownia.</h2>
-          <h2 class="text-white h1">Czytanie zmieniającego się świata</h2>
-          <h2 class="text-info h1">_____</h2>
+          {% if page.locale == "pl" %}{% include pl/title.html %}{% endif %}
+          {% if page.locale == "de" %}{% include de/title.html %}{% endif %}
         </div>
       </div>
     </header>
@@ -60,8 +34,8 @@
     {{ content }}
 
     <footer class="container-fluid p-5 text-muted text-center">
-      <small>&copy; 2020 Katarzyna Opielka &amp; Jan Opielka</small><br>
-     <small>Projekt graficzny: Paulina Jóźwik</small>
+      {% if page.locale == "pl" %}{% include pl/footer.html %}{% endif %}
+      {% if page.locale == "de" %}{% include de/footer.html %}{% endif %}
     </footer>
   </body>
 </html>
